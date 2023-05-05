@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOKENDS.in</title>
+    <link rel="stylesheet" href="Home.css" />
+  </head>
+  <body>
+    <nav>
+      <label class="navibar">BOOKENDS</label>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Bestsellers</a></li>
+        <li><a href="#">Fresh Arrivals</a></li>
+        <li><a href="#">Authors</a></li>
+        <!-- <li><a href="#">Connect</a></li> -->
+        <li><a href="Login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <br />
+
+    <div class="sb">
+      <div class="cont1">
+        <img
+          src="C:\Users\suriy\OneDrive\Pictures\Saved Pictures\sample1.jpg"
+          alt="image"
+        />
+        <h2>Book Title</h2>
+        <blockquote>
+          <span style="padding-left: 40px">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+            tempore repellat, ullam fuga veritatis iusto! Ut quae laboriosam
+            culpa, rerum veritatis ratione necessitatibus consectetur sequi.
+            Ipsa necessitatibus pariatur error. Quisquam?</span
+          >
+          <a href="#"> Author </a>
+        </blockquote>
+      </div>
+    </div>
+  </body>
+</html>
+
+<html>  
+<body>  
+  
+<h2 style="color:green">Create a checkbox and get its value</h2>  
+<h3> Are you interested in books? </h3>  
+Yes: <input type="checkbox" id="myCheck1" value="Yes, I'm a book lover">  
+No: <input type="checkbox" id="myCheck2" value="No, I'm not a book lover">  
+<br> <br>  
+<button onclick="checkCheckbox()">Submit</button> <br>  
+  
+<h4 style="color:green" id="result"></h3>   
+<h4 style="color:red" id="error"></h3>   
+  
+<script>  
+function checkCheckbox() {  
+  var yes = document.getElementById("myCheck1");  
+  var no = document.getElementById("myCheck2");  
+  if (yes.checked == true && no.checked == true){  
+    return document.getElementById("error").innerHTML = "Please mark only one checkbox either Yes or No";  
+  }  
+  else if (yes.checked == true){  
+    var y = document.getElementById("myCheck1").value;  
+    return document.getElementById("result").innerHTML = y;   
+  }   
+  else if (no.checked == true){  
+    var n = document.getElementById("myCheck2").value;  
+    return document.getElementById("result").innerHTML = n;  
+  }  
+  else {  
+    return document.getElementById("error").innerHTML = "*Please mark any of checkbox";  
+  }  
+}  
+</script>  
+  
+</body>  
+</html>  
