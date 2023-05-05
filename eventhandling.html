@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Handling</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: rgb(251, 1, 29);
+        background: linear-gradient(
+          115deg,
+          rgb(23, 115, 129) 28%,
+          rgb(54, 74, 132) 30%,
+          rgb(0, 3, 3) 70%,
+          rgb(6, 54, 77) 100%
+        );
+        /* background-color:linear-gradient(115deg, rgba(251,1,29,1) 0%, rgba(93,1,40,1) 20%, rgba(99,110,112,1) 86%, rgba(179,150,134,1) 100%); */
+      }
+      button {
+        background-color: #0c1f2b;
+        color: white;
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 200px;
+        margin-left: 700px;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+      .message {
+        margin-top: 20px;
+        margin-left: 700px;
+        font-size: 18px;
+        color: whitesmoke;
+      }
+      h3 {
+        text-align: center;
+        margin-top: 90px;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Event Handling Onclick</h1>
+    <hr />
+    <h3>Click the below button</h3>
+    <button onclick="handleClick()">Click me!</button>
+    <div class="message" id="message"></div>
+
+    <script>
+      function handleClick() {
+        let message = document.getElementById("message");
+        message.textContent = "Button clicked!";
+      }
+    </script>
+  </body>
+</html>
